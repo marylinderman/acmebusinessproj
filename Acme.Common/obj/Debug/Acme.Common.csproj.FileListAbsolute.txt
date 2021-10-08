@@ -1,0 +1,6 @@
+C:\ACM\ACM\Acme.Common\bin\Debug\Acme.Common.dll
+C:\ACM\ACM\Acme.Common\bin\Debug\Acme.Common.pdb
+C:\ACM\ACM\Acme.Common\obj\Debug\Acme.Common.csprojAssemblyReference.cache
+C:\ACM\ACM\Acme.Common\obj\Debug\Acme.Common.csproj.CoreCompileInputs.cache
+C:\ACM\ACM\Acme.Common\obj\Debug\Acme.Common.dll
+C:\ACM\ACM\Acme.Common\obj\Debug\Acme.Common.pdb
