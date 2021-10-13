@@ -29,12 +29,12 @@ namespace ACM.BL
             OrderItems = new List<OrderItem>();
         }
         /// <summary>
-        ///  Gets or set the integer value representing the identifier assoicated with the address. 
+        ///  Gets or set the integer value representing the identifier assoicated with an <see cref="Address"/> object. 
         /// </summary>
         //Ids for customer and address illustrate composition by IDs
         public int ShippingAddressId { get; set; }
         /// <summary>
-        ///  Gets or set the integer value representing the identifier assoicated with the customer.
+        ///  Gets or set the integer value representing the identifier assoicated with a <see cref="Customer"/> object.
         /// </summary>
         public int CustomerId { get; set; }
         /// <summary>

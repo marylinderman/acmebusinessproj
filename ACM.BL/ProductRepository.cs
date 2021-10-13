@@ -15,8 +15,8 @@ namespace ACM.BL
         /// <summary>
         /// Retreives a <see cref="Product"/> object from the database.
         /// </summary>
-        /// <param name="productId">An integer representing the unique ID for a <see cref="Product"/> object.</param>
-        /// <returns>Returns a <see cref="Product"/> object.</returns>
+        /// <param name="productId">An integer representing the unique ID for a <see cref="Product"/> object</param>
+        /// <returns>A <see cref="Product"/> object</returns>
         public Product Retrieve(int productId)
         {
             Product product = new Product(productId);
@@ -41,7 +41,7 @@ namespace ACM.BL
         /// Saves a <see cref="Product"/> object to the database.
         /// </summary>
         /// <param name="product">A <see cref="Product"/> object</param>
-        /// <returns>Returns a Boolean value indicating whether save operation was successful.</returns>
+        /// <returns>A Boolean value indicating whether save operation was successful</returns>
         public bool Save(Product product)
         {
             var success = true;

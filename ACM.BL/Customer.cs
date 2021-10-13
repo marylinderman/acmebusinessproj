@@ -27,6 +27,19 @@ namespace ACM.BL
         /// Initializes an instance of the Customer class with an identifier.
         /// </summary>
         /// <param name="customerId">An integer representing an identifier for a customer</param>
+        ///<example>
+        ///The following code sample illustrates how to instatiate a Customer instance:
+        /// <code>
+        /// Customer customer = new Customer(1)
+        ///{
+        ///    FirstName = "Bilbo",
+        ///    LastName = "Baggins",
+        ///    EmailAddress = "fbaggins@shire.org"
+        ///  };
+        /// 
+        /// </code></example>
+
+
         public Customer(int customerId)
         {
             CustomerId = customerId;
@@ -42,7 +55,7 @@ namespace ACM.BL
         //add a type property rather than inheritance in this case
         public int CustomerType { get; set; }
         /// <summary>
-        /// Gets an integer representing the identifier associated with the customer.
+        /// Gets or sets an integer representing the identifier associated with the customer.
         /// </summary>
         //Use propg snippet in VS
         public int CustomerId { get; private set; }
@@ -88,18 +101,18 @@ namespace ACM.BL
         //Override method on Object base class and use lambda expression
 
         /// <summary>
-        /// Formats the product information as a string.
+        /// Formats the customer information as a string.
         /// </summary>
         /// <returns>A string with customer information</returns>
         public override string ToString() => FullName;
         /// <summary>
-        /// Stores the number Customer objects created in the application.
+        /// Stores the number <see cref="Customer"/> objects created in the application.
         /// </summary>
         public static int InstanceCount { get; set; }
         /// <summary>
-        /// Determines whether the order properties are valid.
+        /// Determines whether the Customer object properties are valid.
         /// </summary>
-        /// <returns>A Boolean value indicating whether the order is valid.</returns>
+        /// <returns>A Boolean value indicating whether the Customer object is valid</returns>
         public override bool Validate()
         {
             var isValid = true;
@@ -111,7 +124,7 @@ namespace ACM.BL
         /// <summary>
         /// Returns a log message about the customer status.
         /// </summary>
-        /// <returns>A string containing a log message.</returns>
+        /// <returns>A string containing a log message</returns>
         public string Log() =>$"{CustomerId}: {FullName} Email: {EmailAddress}  Status: {EntityState.ToString()}";
     
 

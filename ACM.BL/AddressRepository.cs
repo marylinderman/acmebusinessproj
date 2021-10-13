@@ -15,8 +15,8 @@ namespace ACM.BL
         /// <summary>
         /// Retreieves a single <see cref="Address"/> object from the database.
         /// </summary>
-        /// <param name="addressId">An integer representing the unique ID for an <see cref="Address"/> object.</param>
-        /// <returns>Returns a single <see cref="Address"/> object.</returns>
+        /// <param name="addressId">An integer representing the unique ID for an <see cref="Address"/> object</param>
+        /// <returns>A single <see cref="Address"/> object</returns>
         public Address Retrieve (int addressId)
         {
             Address address = new Address(addressId);
@@ -35,10 +35,10 @@ namespace ACM.BL
             return address;
         }
         /// <summary>
-        /// Retreieves all addresses for a customer.
+        /// Retreives all <see cref="Address"/> objects assoicated with a specific customer.
         /// </summary>
-        /// <param name="customerId">An integer representing the unique ID for a <see cref="Customer"/> object.</param>
-        /// <returns>Returns an iterable list of <see cref="Address"/> objects.</returns>
+        /// <param name="customerId">An integer representing the unique ID for a <see cref="Customer"/> object</param>
+        /// <returns>An iterable list of <see cref="Address"/> objects</returns>
         public IEnumerable<Address> RetrieveByCustomerId(int customerId)
         {
 
@@ -75,7 +75,7 @@ namespace ACM.BL
         ///  Saves an <see cref="Address"/> object to the database.
         /// </summary>
         /// <param name="address">An <see cref="Address"/> object</param>
-        /// <returns>Returns a Boolean value indicating whether save operation was successful.</returns>
+        /// <returns>A Boolean value indicating whether save operation was successful</returns>
         public bool Save(Address address)
         {
             var success = true;

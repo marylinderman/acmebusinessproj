@@ -8,7 +8,7 @@ namespace ACM.BL
 {
 
     /// <summary>
-    /// Represents an abstract base class for all entity classes, such as Customer, Order, and others.
+    /// Represents an abstract base class for all entity classes, such as <see cref="Customer"/>, <see cref="Order"/>, and others.
     /// </summary>
     
 
@@ -16,16 +16,16 @@ namespace ACM.BL
     public abstract class EntityBase
     {
         /// <summary>
-        /// Specifies whether an entity object is available in the application.
+        /// Specifies whether object is available in the application.
         /// </summary>
         public enum EntityStateOption
         {
             /// <summary>
-            /// Indicates an entity instance is available in the application.
+            /// Indicates that an entity object is available in the application.
             /// </summary>
             Active,
             /// <summary>
-            /// Indicates an entity instances that was removed from the application.
+            /// Indicates that an entity object that was removed from the application.
             /// </summary>
             Deleted
         }
@@ -34,22 +34,22 @@ namespace ACM.BL
         /// </summary>
         public EntityStateOption EntityState { get; set; }
         /// <summary>
-        ///  Gets or sets a Boolean value indicating whether the entity object has been modified.
+        ///  Gets or sets a Boolean value indicating whether the object has been modified.
         /// </summary>
         public bool HasChanges { get; set; }
         /// <summary>
-        ///  Gets or sets a Boolean value indicating whether the entity object was recently created. 
+        ///  Gets or sets a Boolean value indicating whether the object was recently created. 
         /// </summary>
         public bool IsNew { get; private set; }
         /// <summary>
-        /// Gets or sets a Boolean value indicating whether entity object has valid properties on it. 
+        /// Gets or sets a Boolean value indicating whether object has valid properties on it. 
         /// </summary>
         //This property uses polymorphism to call the correct method based on the entity type.
         public bool IsValid => Validate();
         /// <summary>
         ///  Verifies whether the entity object has properties set to valid values.
         /// </summary>
-        /// <returns>Returns a Boolean value indicating whether the object is valid.</returns>
+        /// <returns>A Boolean value indicating whether the object is valid</returns>
         // Override this method in each of the entity classes.
         // No method body and ends with ;
         public abstract bool Validate();

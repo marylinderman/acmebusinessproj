@@ -21,7 +21,7 @@ namespace ACM.BL
         /// <summary>
         /// Initializes an instance of the Address class with an address identifier.
         /// </summary>
-        /// <param name="addressId">An integer representing an identifier for an address.</param>
+        /// <param name="addressId">An integer representing an identifier for an address</param>
         public Address(int addressId)
         {
             AddressId = addressId; 
@@ -65,7 +65,7 @@ namespace ACM.BL
         /// <summary>
         ///  Determines whether the properties for an address are valid.
         /// </summary>
-        /// <returns>Returns a Boolean value indicating whether the address is valid.</returns>
+        /// <returns>A Boolean value indicating whether the address is valid</returns>
         /// 
 
         /// <example>

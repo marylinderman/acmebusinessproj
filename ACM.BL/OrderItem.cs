@@ -21,7 +21,7 @@ namespace ACM.BL
         /// <summary>
         /// Initializes an instance of the OrderItem class with an order item identifier.
         /// </summary>
-        /// <param name="orderItemId">An integer representing an identifier for an order item.</param>
+        /// <param name="orderItemId">An integer representing an identifier for an order item</param>
         public OrderItem(int orderItemId)
         {
             OrderItemId = orderItemId;
@@ -59,8 +59,8 @@ namespace ACM.BL
         /// <summary>
         /// Retreives an order item from the database.
         /// </summary>
-        /// <param name="orderItemId">An integer representing the unique ID for an order item.</param>
-        /// <returns>Returns an OrderItem object.</returns>
+        /// <param name="orderItemId">An integer representing the unique ID for an order item</param>
+        /// <returns>An OrderItem object</returns>
         public OrderItem Retrieve(int orderItemId)
         {
             return new OrderItem();
@@ -68,7 +68,7 @@ namespace ACM.BL
         /// <summary>
         /// Saves an order item to the database.
         /// </summary>
-        /// <returns>Returns a Boolean value indicating whether save operation was successful.</returns>
+        /// <returns>A Boolean value indicating whether save operation was successful</returns>
         public bool Save()
         {
             return true;

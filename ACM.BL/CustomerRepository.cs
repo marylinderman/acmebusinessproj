@@ -24,8 +24,8 @@ namespace ACM.BL
         /// <summary>
         ///  Retreives a <see cref="Customer"/> object from the database.
         /// </summary>
-        /// <param name="customerId">An integer representing the unique ID for a <see cref="Customer"/> object.</param>
-        /// <returns>Returns a <see cref="Customer"/> object.</returns>
+        /// <param name="customerId">An integer representing the unique ID for a <see cref="Customer"/> object</param>
+        /// <returns>A <see cref="Customer"/> object</returns>
         public Customer Retrieve(int customerId)
         {
             var customer =  new Customer(customerId);
@@ -48,7 +48,7 @@ namespace ACM.BL
         /// Saves a <see cref="Customer"/> object to the database.
         /// </summary>
         /// <param name="customer">A <see cref="Customer"/> object</param>
-        /// <returns>Returns a Boolean value indicating whether save operation was successful.</returns>
+        /// <returns>A Boolean value indicating whether save operation was successful</returns>
         public bool Save(Customer customer)
         {
             var success = true;

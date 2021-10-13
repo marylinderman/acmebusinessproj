@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ACM.BL
 {
     /// <summary>
-    /// Represents a product entity.
+    /// Represents a product.
     /// </summary>
     public class Product: EntityBase, ILoggable
     {
@@ -23,7 +23,7 @@ namespace ACM.BL
         /// <summary>
         /// Initializes an instance of the Product class with an identifier.
         /// </summary>
-        /// <param name="productId">An integer representing an identifier for a product.</param>
+        /// <param name="productId">An integer representing an identifier for a product</param>
         public Product(int productId)
         {
             ProductId = productId;
@@ -66,13 +66,13 @@ namespace ACM.BL
         /// <summary>
         /// Formats the product name.
         /// </summary>
-        /// <returns>A formatted string with product information.</returns>
+        /// <returns>A formatted string with product information</returns>
         //Override method on Object base class
         public override string ToString() => ProductName;
         /// <summary>
         /// Determines whether the product properties are valid.
         /// </summary>
-        /// <returns>Returns a Boolean value indicating whether the product is valid.</returns>
+        /// <returns>A Boolean value indicating whether the product is valid</returns>
         public override bool Validate()
         {
             var isValid = true;
@@ -84,7 +84,7 @@ namespace ACM.BL
         /// <summary>
         ///  Returns a log message about the product status.
         /// </summary>
-        /// <returns>A string containing a log message.</returns>
+        /// <returns>A string containing a log message</returns>
         public string Log() => $"{ProductId}: {ProductName} Detail: {ProductDescription}  Status: {EntityState.ToString()}";
 
 
