@@ -3,6 +3,15 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+
+#Folders to ignore
+ACM.BL/bin/Debug/
+Acme.Common/bin/Debug/
+Tests/Acme.CommonTest/bin/Debug/
+Tests/ACM.BLTest/bin/Debug/
+Acme.Common/obj/Debug/
+Tests/ACM.BLTest/obj/Debug/
+
 # User-specific files
 *.rsuser
 *.suo
@@ -31,6 +40,8 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+
+
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -175,7 +186,7 @@ DocProject/Help/*.hhk
 DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
-
+Help/
 # Click-Once directory
 publish/
 

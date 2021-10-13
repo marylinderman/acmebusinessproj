@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
+    /// <summary>
+    ///  Provides functionality for adding addressses to and retrieving them from a database.
+    /// </summary>
     //Require a repo class for addresses because used by others.
     public class AddressRepository
     {
+        /// <summary>
+        /// Retreieves a single <see cref="Address"/> object from the database.
+        /// </summary>
+        /// <param name="addressId">An integer representing the unique ID for an <see cref="Address"/> object.</param>
+        /// <returns>Returns a single <see cref="Address"/> object.</returns>
         public Address Retrieve (int addressId)
         {
             Address address = new Address(addressId);
@@ -26,7 +34,11 @@ namespace ACM.BL
             }
             return address;
         }
-
+        /// <summary>
+        /// Retreieves all addresses for a customer.
+        /// </summary>
+        /// <param name="customerId">An integer representing the unique ID for a <see cref="Customer"/> object.</param>
+        /// <returns>Returns an iterable list of <see cref="Address"/> objects.</returns>
         public IEnumerable<Address> RetrieveByCustomerId(int customerId)
         {
 
@@ -59,8 +71,12 @@ namespace ACM.BL
             addressList.Add(address);
             return addressList;
         }
-
-     public bool Save(Address address)
+        /// <summary>
+        ///  Saves an <see cref="Address"/> object to the database.
+        /// </summary>
+        /// <param name="address">An <see cref="Address"/> object</param>
+        /// <returns>Returns a Boolean value indicating whether save operation was successful.</returns>
+        public bool Save(Address address)
         {
             var success = true;
 

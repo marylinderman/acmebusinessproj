@@ -7,3 +7,14 @@ C:\ACM\ACM\ACM.BL\obj\Debug\ACM.BL.pdb
 C:\ACM\ACM\ACM.BL\bin\Debug\Acme.Common.dll
 C:\ACM\ACM\ACM.BL\bin\Debug\Acme.Common.pdb
 C:\ACM\ACM\ACM.BL\obj\Debug\ACM.BL.csproj.CopyComplete
+C:\AcmProj\ACM.BL\bin\Debug\ACM.BL.dll
+C:\AcmProj\ACM.BL\bin\Debug\Acme.Common.dll
+C:\AcmProj\ACM.BL\obj\Debug\ACM.BL.csprojAssemblyReference.cache
+C:\AcmProj\ACM.BL\obj\Debug\ACM.BL.csproj.CoreCompileInputs.cache
+C:\AcmProj\ACM.BL\bin\Debug\ACM.BL.xml
+C:\AcmProj\ACM.BL\bin\Debug\ACM.BL.pdb
+C:\AcmProj\ACM.BL\bin\Debug\Acme.Common.pdb
+C:\AcmProj\ACM.BL\bin\Debug\Acme.Common.xml
+C:\AcmProj\ACM.BL\obj\Debug\ACM.BL.csproj.CopyComplete
+C:\AcmProj\ACM.BL\obj\Debug\ACM.BL.dll
+C:\AcmProj\ACM.BL\obj\Debug\ACM.BL.pdb

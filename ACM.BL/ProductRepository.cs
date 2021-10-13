@@ -6,9 +6,17 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-   public class ProductRepository
+    /// <summary>
+    /// Provides functionality for adding <see cref="Product"/> objects to and retrieving them from a database.
+    /// </summary>
+    public class ProductRepository
     {
 
+        /// <summary>
+        /// Retreives a <see cref="Product"/> object from the database.
+        /// </summary>
+        /// <param name="productId">An integer representing the unique ID for a <see cref="Product"/> object.</param>
+        /// <returns>Returns a <see cref="Product"/> object.</returns>
         public Product Retrieve(int productId)
         {
             Product product = new Product(productId);
@@ -29,7 +37,11 @@ namespace ACM.BL
 
             return product;
         }
-
+        /// <summary>
+        /// Saves a <see cref="Product"/> object to the database.
+        /// </summary>
+        /// <param name="product">A <see cref="Product"/> object</param>
+        /// <returns>Returns a Boolean value indicating whether save operation was successful.</returns>
         public bool Save(Product product)
         {
             var success = true;

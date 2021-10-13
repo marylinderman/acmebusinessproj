@@ -6,13 +6,23 @@ using System.Threading.Tasks;
 
 namespace Acme.Common
 {
+    /// <summary>
+    /// Provides functionality for formatting strings with spaces.
+    /// </summary>
     public static class StringHandler
     {
         /// <summary>
-        /// Inserts spaces before each capital letter in a string.
+        /// Inserts a space before each capital letter in a string.
         /// </summary>
-        /// <param name="source"></param>
-        /// <returns></returns>
+        /// <param name="source">A string to be formatted.</param>
+        /// <returns>A string formatted with a space preceding each capital letter.</returns>
+        /// <example>
+        /// The following code sample illustrates how to call the InsertSpaces() method:
+        /// <code lang="c#">
+        ///  var sourceString = "SonicScrewdriver";
+        ///  var formattedString = sourceString.InsertSpaces();
+        /// </code></example>
+
         public static string InsertSpaces(this string source)
         {
             string result = string.Empty;
